@@ -1,0 +1,47 @@
+spring:
+  session.store-type: none
+  jmx.enabled: false  #server multi
+  jpa:
+      generate-ddl: true
+      database: POSTGRESQL 
+      #show-sql: true #show select sql
+      hibernate.ddl-auto:  update #update script
+      properties:
+          hibernate:
+              jdbc:
+                  lob.non_contextual_creation: true
+                  time_zone: UTC #timestamp
+      
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/attendance
+    username: postgres
+    password: softlink
+    platform: postgres
+server.port: 8081 #port
+spring.jpa.properties.hibernate.enable_lazy_load_no_trans: true
+
+##spring.jpa.hibernate.ddl-auto=create-drop
+#spring.jpa.generate-ddl=true
+#
+#spring.jpa.database=POSTGRESQL
+#spring.datasource.platform=postgres
+#spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
+#
+#spring.datasource.driverClassName=org.postgresql.Driver
+#spring.datasource.url=jdbc:postgresql://localhost:5432/attendance
+#spring.datasource.username=postgres
+#spring.datasource.password=softlink
+#server.port=8081
+#
+#spring.jpa.show-sql=true
+#spring.session.store-type=none
+#
+#spring.jpa.hibernate.ddl-auto = update
+#
+#
+##timestamp
+#spring.jpa.properties.hibernate.jdbc.time_zone=UTC
+#
+##server multi
+#spring.jmx.enabled = false

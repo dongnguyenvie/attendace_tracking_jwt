@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="API-ATTENDANCE">
+		<class>com.APIATTENDANCE.application.entity.BlueLive</class>
+		<class>com.APIATTENDANCE.application.entity.CellLive</class>
+		<class>com.APIATTENDANCE.application.entity.LocationLive</class>
+		<class>com.APIATTENDANCE.application.entity.SatLive</class>
+		<class>com.APIATTENDANCE.application.entity.SenLive</class>
+		<class>com.APIATTENDANCE.application.entity.Track</class>
+		<class>com.APIATTENDANCE.application.entity.User</class>
+		<class>com.APIATTENDANCE.application.entity.WifiLive</class>
+		<class>com.APIATTENDANCE.application.entity.BlueGeo</class>
+		<class>com.APIATTENDANCE.application.entity.CellGeo</class>
+		<class>com.APIATTENDANCE.application.entity.Company</class>
+		<class>com.APIATTENDANCE.application.entity.Geo</class>
+		<class>com.APIATTENDANCE.application.entity.LocationGeo</class>
+		<class>com.APIATTENDANCE.application.entity.Place</class>
+		<class>com.APIATTENDANCE.application.entity.SatGeo</class>
+		<class>com.APIATTENDANCE.application.entity.SenGeo</class>
+		<class>com.APIATTENDANCE.application.entity.UserFrequency</class>
+		<class>com.APIATTENDANCE.application.entity.WifiGeo</class>
+	</persistence-unit>
+</persistence>
